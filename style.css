@@ -286,7 +286,14 @@ header {
     width: 20px;
     height: 20px;
   }
-  
+
+  .cm-show-replies-btn span {
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #3ea6ff;
+  }
+
   .video-options .btn span {
     color: #aaa;
     font-size: 1.3rem;
@@ -590,141 +597,133 @@ header {
   
   .thumbnail-overlay .btn {
     margin-right: -1rem;
-  }
+}
+
+.thumbnail:hover .thumbnail-img-overlay,
+.thumbnail:hover .thumbnail-overlay {
+  visibility: initial;
+}
+.comments-info {
+  display: flex;
+  align-items: center;
+}
+
+.comments-count {
+  font-size: 1.6rem;
+}
+
+.sort-btn {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-left: 3rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #aaa;
+}
+
+.sort-btn img {
+  padding-right: 1rem;
+}
+
+.new-comment,
+.comment {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.user-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.comment-input {
+  flex-grow: 1;
+  align-self: self-start;
+  margin: 0 2.4rem 0 1.5rem;
+  height: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #393939;
+}
+
+.comment {
+  align-items: initial;
+}
+
+.comment-info {
+  margin-left: 1.5rem;
+}
+
+.comment-user {
+  display: flex;
+  align-items: center;
+}
+
+.user-name,
+.comment-time {
+  font-size: 1.3rem;
+}
+
+.comment-time {
+  padding-left: 0.5rem;
+  color: #aaa;
+}
+
+.comment-text {
+  padding: 0.5rem 0 0.5rem 0;
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+.comment-options,
+.cm-show-replies-btn {
+  display: flex;
+  align-items: center;
+}
+
+.comment-options .btn {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 32px;
+  color: #aaa;
+}
+
+.comment-options .btn img {
+  width: 16px;
+  height: 16px;
+}
+
+.btn.cm-like-btn,
+.btn.cm-dislike-btn {
+  padding-right: 1.5rem;
+}
+
+.cm-like-btn span,
+.cm-reply-btn span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.cm-like-btn span {
+  padding-left: 1rem;
+}
+
+.cm-reply-btn {
+  padding: 0 1rem;
+}
+
+.cm-show-replies-btn {
+  width: auto;
+}
   
-  .thumbnail:hover .thumbnail-img-overlay,
-  .thumbnail:hover .thumbnail-overlay {
-    visibility: initial;
-  }
-  .comments-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .comments-count {
-    font-size: 1.6rem;
-  }
-  
-  .sort-btn {
-    display: flex;
-    align-items: center;
-    width: auto;
-    margin-left: 3rem;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #aaa;
-  }
-  
-  .sort-btn img {
-    padding-right: 1rem;
-  }
-  
-  .new-comment,
-  .comment {
-    display: flex;
-    align-items: center;
-    margin-top: 3rem;
-    width: 100%;
-  }
-  
-  .user-avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .comment-input {
-    flex-grow: 1;
-    align-self: self-start;
-    margin: 0 2.4rem 0 1.5rem;
-    height: 2.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #393939;
-  }
-  
-  .comment {
-    align-items: initial;
-  }
-  
-  .comment-info {
-    margin-left: 1.5rem;
-  }
-  
-  .comment-user {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-name,
-  .comment-time {
-    font-size: 1.3rem;
-  }
-  
-  .comment-time {
-    padding-left: 0.5rem;
-    color: #aaa;
-  }
-  
-  .comment-text {
-    padding: 0.5rem 0 0.5rem 0;
-    line-height: 1.5;
-    font-size: 1.4rem;
-  }
-  
-  .comment-options,
-  .cm-show-replies-btn {
-    display: flex;
-    align-items: center;
-  }
-  
-  .comment-options .btn {
-    display: flex;
-    align-items: center;
-    width: auto;
-    height: 32px;
-    color: #aaa;
-  }
-  
-  .comment-options .btn img {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .btn.cm-like-btn,
-  .btn.cm-dislike-btn {
-    padding-right: 1.5rem;
-  }
-  
-  .cm-like-btn span,
-  .cm-reply-btn span {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #aaa;
-  }
-  
-  .cm-like-btn span {
-    padding-left: 1rem;
-  }
-  
-  .cm-reply-btn {
-    padding: 0 1rem;
-  }
-  
-  .cm-show-replies-btn {
-    width: auto;
-  }
-  
-  .cm-show-replies-btn img {
-    margin-left: -6px;
-  }
-  
-  .cm-show-replies-btn span {
-    padding-left: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: #3ea6ff;
-  }
-  
+.cm-show-replies-btn img {
+  margin-left: -6px;
+}
