@@ -157,6 +157,7 @@ header {
   margin-left: -6px;
 }
 
+<<<<<<< HEAD
 .user-avatar img {
   width: 40px;
   height: 40px;
@@ -172,6 +173,8 @@ header {
   height: 20px;
 }
 
+=======
+>>>>>>> 76afd1c515d95cc8acfe9d6fceb80ade94fa1bbd
 .auth .profile img{
   max-width: 100%;
   object-fit: cover;
@@ -606,6 +609,14 @@ aside {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
+<<<<<<< HEAD
+=======
+.thumbnail-img-overlay img {
+  width: 20px;
+  height: 20px;
+}
+
+>>>>>>> 76afd1c515d95cc8acfe9d6fceb80ade94fa1bbd
 .thumbnail-overlay {
   visibility: hidden;
   position: absolute;
